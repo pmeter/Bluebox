@@ -62,6 +62,8 @@ You can also enter "246.1" to start playing all albums from Supertramp.
 
 I have a list on paper of all albums and collections, which is just a printout of my folder structure.
 
+You can also put use key words. Start playing a dir containing 'Best of Queen': best of queen.
+
 By playing a music folder, the playlist is automatically cleared and the whole folder is loaded including subfolders. If you start your folder with "+" in front of it, the playlist won't be cleared. So you can easily put many folders in the playlist.
 
 On each input, the Bluebox app scans your folder structure to find and play the intended folder. So when you add new music, use the official Bluesound app to update the player index and you're done.
