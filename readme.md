@@ -36,8 +36,10 @@ Repeat on: 8 (endless sign)
 Repeat off: 1
 Shuffle on: 5
 Shuffle off: 2
-Goto number 11 of the playlist: -11
+Start playing album 123: 123
+Start playing a dir containing 'Best of Queen': best of queen
 Start playing album 123 without clearing playlist: +123
+Goto number 11 of the playlist: -11
 ```
 
 When you start playing a music folder, repeat is automatically on and shuffle is automatically off. This is different when there is an empty file "!shuffle_on" in the music directory.
