@@ -176,7 +176,7 @@ class Status(object):
         try:
             status_elements = self.get_status().getElementsByTagName("fn")[0]
             playing_dir_and_file = status_elements.firstChild.data
-            playing_dir_and_file = playing_dir_and_file.replace("/var/mnt/JEESNAS-music/", "")
+            playing_dir_and_file = playing_dir_and_file.replace(bluesound_path2_conf, "")
             return playing_dir_and_file
         except IndexError as error:
             return ""
