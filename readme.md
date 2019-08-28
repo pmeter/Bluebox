@@ -70,10 +70,12 @@ The Bluebox app is written in Python 3. I have mine running on three devices: Wi
 Put all the app-files in one folder and fill in the needed items in the file app_conf.py.
 Install Python3 if needed.
 Start the application and see which libraries need to be installed. From what I remember these are: 
-> python3-tk
-> python-imaging
-> python-imaging-tk
-> python3-pil.imagetk
+```
+python3-tk
+python-imaging
+python-imaging-tk
+python3-pil.imagetk
+```
 
 ## Installation on a Raspberry Pi ##
 Install Raspbian, including the graphic environment, on a Raspberry Pi. I use a Raspberry Pi 3b.
@@ -104,17 +106,19 @@ xset -nocursor
 ```
 
 Install the needed Python libraries. If I remember correctly, these are:
-> sudo apt-get install python3-tk
-> sudo apt-get install python-imaging 
-> sudo apt-get install python-imaging-tk
-> sudo apt-get install python3-pil.imagetk
+```
+sudo apt-get install python3-tk
+sudo apt-get install python-imaging 
+sudo apt-get install python-imaging-tk
+sudo apt-get install python3-pil.imagetk
+```
 
 Start the Bluebox app with entering "./bluebox.sh".
 
 # A physical display, permanently showing the playlist and album art #
 I use the ETEPON Raspberry Pi Screen 7 Inch HDMI Monitor. There is one screen layout for all functions. Everything is there and accessable in one glance. 
 
-If you use this display, then this is the configuration:
-> sudo nano /boot/config.txt
-> Fill in the line:
-> hdmi_cvt 1024 600  60 6 0 0 0
+If you use this display, then with "sudo nano /boot/config.txt" fill in the line:
+```
+hdmi_cvt 1024 600  60 6 0 0 0
+```
