@@ -323,7 +323,7 @@ class Bluesound_play_dir(object):
 
         found_dir_converted = found_dir.replace(" ", "%20")
         found_dir_converted = found_dir_converted.replace("&", "%26")
-        found_dir_converted = found_dir_converted.replace(path, "//JEESNAS/music/") # het pad zoals de Bluesound netwerkspeler die herkent
+        found_dir_converted = found_dir_converted.replace(path, bluesound_path_conf) # het pad zoals de Bluesound netwerkspeler die herkent
         found_dir_converted = found_dir_converted.replace("\\", "/")
         print(base_url + "Add?service=LocalMusic&playnow=-1&path=" + found_dir_converted)
             
