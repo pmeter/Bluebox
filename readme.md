@@ -19,6 +19,7 @@ I wanted a few things the official Bluesound app does not offer:
 ## Physical buttons for control ##
 The Bluebox app, running on a Raspberry Pi, can be controlled by a physical numeric keypad. Like this:
 ![Keypad image](https://tweakers.net/ext/f/Bp6pbeOblb8KT7XEZi70ZIwm/medium.jpg)
+![Raspberry Pi image](https://tweakers.net/ext/f/FjMlup34GATKbIEM56oUrIJt/full.jpg)
 
 ## Basic play functions ##
 The Bluebox app has some buttons like play and pause. Personally I don't use them. I only use the numeric keypad. 
