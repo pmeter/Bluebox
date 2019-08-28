@@ -44,10 +44,15 @@ When you start playing a music folder, repeat is automaticcaly on and shuffle is
 
 ## Start playing a music folder ##
 The Bluebox app doesn't make use of ID3 tags. It's purely folder based. I have my music sorted in folders. Each folder can be an album from one artist or a collection of miscelancelous music. The tags don't matter. The only requirement is that the folder has a unique name. I use a numbered system.
+
 One of the main folders is "246 Classic Rock".
+
 In that folder there is for instance "246.1 Supertramp & Roger Hodgson".
+
 And in that folder you can find "246.1.2 - 1974 Supertramp - Crime Of The Century".
+
 To start that album, you simply put in "246.1.2" and "enter". Then that album starts playing.
+
 You can also enter "246.1" to start playing all albums from Supertramp.
 
 I have a list on paper of all albums and collections, which is just a printout of my folder structure.
