@@ -12,5 +12,8 @@ windows_path_conf = "S:/"
 #replace this with the path of your network shared music-folder.
 linux_path_conf = "/mnt/mynas/"
 
+#The network share as used in the official Bluesound app
+bluesound_path_conf = "//mynas/music/"
+
 #Insert your last-fm api key if you want to use their online album art.
 last_fm_api_key_conf = ""
