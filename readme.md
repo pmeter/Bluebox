@@ -37,7 +37,7 @@ Repeat off: 1
 Shuffle on: 5
 Shuffle off: 2
 Goto number 11 of the playlist: -11
-Start playing album 123 without clearing playlist: +132
+Start playing album 123 without clearing playlist: +123
 ```
 
 When you start playing a music folder, repeat is automaticcaly on and shuffle is automatically off. This is different when there is an empty file "!shuffle_on" in the music directory.
@@ -127,3 +127,5 @@ If you use this display, then with "sudo nano /boot/config.txt" fill in the line
 ```
 hdmi_cvt 1024 600  60 6 0 0 0
 ```
+# Used sources #
+I found [this thread](https://helpdesk.bluesound.com/discussions/viewtopic.php?f=4&t=2293&sid=e011c0bdf3ede3ea1aeb057de63c1da8) on the Bluesound forum. The other commands I found using Wireshark.
