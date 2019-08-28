@@ -16,6 +16,7 @@ linux_path_conf = "/mnt/mynas/"
 bluesound_path_conf = "//mynas/music/"
 
 #The network share as found in the status.xml, using [ip adress of player]:11000/Status
+#This line is found in the fn-tag.
 bluesound_path2_conf = "/var/mnt/mynas-music/"
 
 #Insert your last-fm api key if you want to use their online album art.
