@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<status etag="5c3d2360fee4c07a995ab1f5374fdb74">
+<album>Unknown</album>
+<artist>Unknown Artist</artist>
+<canMovePlayback>true</canMovePlayback>
+<canSeek>1</canSeek>
+<cursor>74</cursor>
+<fn>/var/mnt/JEESNAS-music/245____ SISO/245.1 Simon &amp; Garfunkel/245.2.0 Best/Art Garfunkel - Time (Across America).mp3</fn>
+<groupName>Slaapkamer+Huiskamer</groupName>
+<groupVolume>100</groupVolume>
+<indexing>0</indexing>
+<mid>427</mid>
+<mode>1</mode>
+<name>Art Garfunkel - Time (Across America).mp3</name>
+<pid>1646</pid>
+<prid>0</prid>
+<quality>256000</quality>
+<repeat>0</repeat>
+<service>LocalMusic</service>
+<serviceIcon>/images/LibraryIcon.png</serviceIcon>
+<shuffle>0</shuffle>
+<sid>6</sid>
+<sleep></sleep>
+<song>0</song>
+<state>play</state>
+<syncStat>20</syncStat>
+<title1>Art Garfunkel - Time (Across America).mp3</title1>
+<title2>Unknown Artist</title2>
+<title3>Unknown</title3>
+<totlen>138</totlen>
+<volume>100</volume>
+<secs>12</secs>
+</status>

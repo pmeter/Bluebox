@@ -1,0 +1,42 @@
+NR,STATION,URL
+,,
+1,NPO 1,http://icecast.omroep.nl/radio1-bb-mp3
+2,NPO 2,http://icecast.omroep.nl/radio2-bb-mp3
+3,NPO 3,http://icecast.omroep.nl/3fm-bb-mp3
+3.1,NPO 3 Alternative,http://icecast.omroep.nl/3fm-alternative-mp3
+3.2,NPO 3 Serious Talent,http://icecast.omroep.nl/3fm-serioustalent-mp3
+5,NPO 5,http://icecast.omroep.nl/radio5-bb-mp3
+,,
+10,Paradise,RadioParadise:/0
+101,Paradise Mellow Mix,RadioParadise:/1/RP%20Mellow%20Mix
+102,Paradise Rock Mix,RadioParadise:/2/RP%20Rock%20Mix
+103,Radio Paradise Eclectic Mix,RadioParadise:/3/RP%20Eclectic%20Mix
+,,
+11,Radio Domeldo (soundtracks en classical),http://185.105.4.53:3006/;stream/1
+12,Ambient Sleeping Pill,http://radio.stereoscenic.com/listen.pls?sid=3
+13,Audiophile Lounge,http://94.23.201.38:8030/stream
+14,Chill Out Zone,http://air.chillout.zone:8000/listen.pls?sid=1
+15,Gold Instrumental,http://45.43.200.42:25858/;stream/1
+16,Neo Classical (pop op instr),http://51.255.235.165:5224/;stream/1
+17,PARTY VIBE RADIO - PSYCHEDELIC TRANCE + PROGRESSIVE + GOA ,http://www.partyviberadio.com:8010/;stream/1
+,,
+21,Magic 80s Florida,http://airspectrum.cdnstream1.com:8018/1606_192
+22,Classic Rock Florida HD,http://us4.internet-radio.com:8258/;stream
+23,Laser Hot Hits International - Listen Again,http://188.40.135.197:8642/;stream/1
+24,Radio 10,http://playerservices.streamtheworld.com/api/livestream-redirect/RADIO10AAC.aac
+241,Radio 10 - 60's en 70's,http://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR18AAC.aac
+242,Radio 10 - 80s,http://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR20AAC.aac
+243,Radio 10 - 90s,http://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR22AAC.aac
+244,Radio 10 - Guilty Pleasures,http://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR12AAC.aac
+245,Radio 10 - Love,http://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR04AAC.aac
+246,Radio 10 - Number 1s,http://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR14AAC.aac
+247,Radio 10 - TOP 4000,http://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR24AAC.aac
+,,
+40,Radio 4,http://icecast.omroep.nl/radio4-bb-mp3
+41,Radio 4 Eigentijds,http://icecast.omroep.nl/radio4-eigentijds-mp3
+42,Radio Klara,https://live-radio.lwc.vrtcdn.be/groupa/live/a9f36fda-cb3c-4b4e-9405-a5bba55654c0/live.isml/.m3u8
+43,Venice Classic Radio Italia,http://174.36.206.197:8000/;stream/1
+44,Venice Classical Radio Live,http://109.123.116.202:8008/;stream/1
+45,Classic Odyssey 24-hours,http://222.122.178.186:4990
+46,Classical Audiophile,http://94.23.201.38:8010/stream
+47,Classical Baroque,http://94.23.201.38:8000/stream
