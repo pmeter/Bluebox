@@ -1,6 +1,8 @@
 # Bluebox #
 Bluebox is an alternative app to control the Bluesound Node music player. It's name comes from Bluesound and Jukebox. It runs on Windows and a Raspberry Pi running Raspbian (Linux). The Bluebox app doesn't make use of ID3 tags like artist and album. It's purely folder based.
 
+The program consists of two main files. The file app_logic.py contains command-functions and status-lookup functions that can be reusable in other projects. The other file app.py is mainly the GUI. The configurarion is done in app_conf.py and radio.cvs.
+
 # Screenshot #
 ![GUI image](https://tweakers.net/ext/f/Kpma7dO1jsqwgu0KFJbyTHXK/full.png)
 
