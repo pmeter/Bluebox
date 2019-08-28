@@ -1,18 +1,18 @@
 # Bluebox #
-Bluebox is an alternatieve app to control the Bluesound Node music player. It's name comes from Bluesound and Jukebox. It runs on Windows and a Raspberry Pi running Raspbian (Linux). The Bluebox app doesn't make use of ID3 tags like artist and album. It's purely folder based.
+Bluebox is an alternative app to control the Bluesound Node music player. It's name comes from Bluesound and Jukebox. It runs on Windows and a Raspberry Pi running Raspbian (Linux). The Bluebox app doesn't make use of ID3 tags like artist and album. It's purely folder based.
 
 # Screenshot #
 ![GUI image](https://tweakers.net/ext/f/Kpma7dO1jsqwgu0KFJbyTHXK/full.png)
 
 # Purpose #
-I wanted a few things the offical Bluesound app does not offer:
+I wanted a few things the official Bluesound app does not offer:
 * Run it on (Windows and) a Raspberry Pi
 * Physical buttons for control 
 * A physical display, permanently showing the playlist and album art
 * Quick access to unlimited music directories and unlimited radio stations
 * By starting some music, automatically clear the playlist and load the whole directory
 * The app shouldn't have to update if you update your Bluesound music index
-* Get album art from multiple sources like Last fm
+* Get album art from multiple sources like Last Fm
 
 # Usage #
 
@@ -40,10 +40,10 @@ Goto number 11 of the playlist: -11
 Start playing album 123 without clearing playlist: +123
 ```
 
-When you start playing a music folder, repeat is automaticcaly on and shuffle is automatically off. This is different when there is an empty file "!shuffle_on" in the music directory.
+When you start playing a music folder, repeat is automatically on and shuffle is automatically off. This is different when there is an empty file "!shuffle_on" in the music directory.
 
 ## Start playing a music folder ##
-The Bluebox app doesn't make use of ID3 tags. It's purely folder based. I have my music sorted in folders. Each folder can be an album from one artist or a collection of miscelancelous music. The tags don't matter. The only requirement is that the folder has a unique name. I use a numbered system.
+The Bluebox app doesn't make use of ID3 tags. It's purely folder based. I have my music sorted in folders. Each folder can be an album from one artist or a collection of miscellaneous music. The tags don't matter. The only requirement is that the folder has a unique name. I use a numbered system.
 
 One of the main folders is "246 Classic Rock".
 
@@ -64,7 +64,7 @@ On each input, the Bluebox app scans your folder structure to find and play the 
 ## Start playing a radio station ##
 The radio stations are also numbered, but starts with a 0. So the Dutch radio 3 is started by entering "03" and "enter". Radio 3 also has some special streams. They are played by entering "03.1" or "03.2". Radio Paradise is played by entering 10, or 101 for the Mellow mix etc.
 
-You can add your own music folders by adding them in radio.cvs, which is a comma seperated file.
+You can add your own music folders by adding them in radio.cvs, which is a comma separated file.
 
 # Installation #
 
@@ -85,7 +85,7 @@ python3-pil.imagetk
 ## Installation on a Raspberry Pi ##
 Install Raspbian, including the graphic environment, on a Raspberry Pi. I use a Raspberry Pi 3b.
 
-Open raspi-config. Set it to boot into the shell invironment with the user already logged in.
+Open raspi-config. Set it to boot into the shell environment with the user already logged in.
 
 Using sudo, create the folder /mnt/mynas
 
@@ -121,7 +121,7 @@ sudo apt-get install python3-pil.imagetk
 Start the Bluebox app with entering "./bluebox.sh".
 
 # A physical display, permanently showing the playlist and album art #
-I use the ETEPON Raspberry Pi Screen 7 Inch HDMI Monitor. There is one screen layout for all functions. Everything is there and accessable in one glance. 
+I use the ETEPON Raspberry Pi Screen 7 Inch HDMI Monitor. There is one screen layout for all functions. Everything is there and accessible in one glance. 
 
 If you use this display, then with "sudo nano /boot/config.txt" fill in the line:
 ```
