@@ -103,9 +103,9 @@ Make the file executable with sudo chmod +x bluebox.sh
 In the user directory make a file ".xsession" and put there:
 ```
 #!/bin/sh
-@xset s off
-@xset -dpms
-@xset s noblank
+xset s off
+xset -dpms
+xset s noblank
 xset -nocursor
 ./bluebox.sh
 ```
