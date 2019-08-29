@@ -1,5 +1,5 @@
 # Bluebox #
-I've made this app as an hobby project. It's my first program :-)
+I've made this app as a hobby project. It's my first program :-)
 
 Bluebox is an alternative app to control the Bluesound Node music player. It's name comes from Bluesound and Jukebox. It runs on Windows and a Raspberry Pi running Raspbian (Linux). Selecting music in Bluebox doesn't make use of ID3 tags like artist and album. It's purely folder based. But once selected, Bluebox displays the ID3 information it gets from the Bluesound player.
 
