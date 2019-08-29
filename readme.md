@@ -1,15 +1,16 @@
 # Bluebox #
+I've made this app as an hobby project. It's my first program :-)
+
 Bluebox is an alternative app to control the Bluesound Node music player. It's name comes from Bluesound and Jukebox. It runs on Windows and a Raspberry Pi running Raspbian (Linux). Selecting music in Bluebox doesn't make use of ID3 tags like artist and album. It's purely folder based. But once selected, Bluebox displays the ID3 information it gets from the Bluesound player.
 
-The program consists of two main files. The file app_logic.py contains command-functions and status-lookup functions that can be reusable in other projects. The other file app.py is mainly the GUI. The configurarion is done in app_conf.py and radio.cvs. The files Status and Playlist are just examples to try the app without a Bluesound player, by setting static_mode on True in the configuration file.
+The program consists of two main files. The file app_logic.py contains command-functions and status-lookup functions that can be reusable in other projects. The other file app.py is mainly the GUI. The configuration is done in app_conf.py and radio.cvs. The files Status and Playlist are just examples to try the app without a Bluesound player, by setting static_mode on True in the configuration file.
 
 # Screenshot #
 ![GUI image](https://tweakers.net/ext/f/Kpma7dO1jsqwgu0KFJbyTHXK/full.png)
 
 # Purpose #
-I wanted a few things the official Bluesound app does not offer:
-* Run it on (Windows and) a Raspberry Pi
-* Physical buttons for control 
+I wanted a few special things:
+* Run the app on a Raspberry Pi with physical buttons for control 
 * A physical display, permanently showing the playlist and album art
 * Quick access to unlimited music directories and unlimited radio stations
 * By starting some music, automatically clear the playlist and load the whole directory
@@ -125,7 +126,7 @@ sudo apt-get install python-imaging-tk
 sudo apt-get install python3-pil.imagetk
 ```
 
-Start the Bluebox app with entering "./bluebox.sh".
+Start the Bluebox app from the shell with entering "startx".
 
 # A physical display, permanently showing the playlist and album art #
 I use the ETEPON Raspberry Pi Screen 7 Inch HDMI Monitor. There is one screen layout for all functions. Everything is there and accessible in one glance. 
