@@ -48,6 +48,8 @@ Goto number 11 of the playlist: -11
 
 When you start playing a music folder, repeat is automatically on and shuffle is automatically off. This is different when there is an empty file "!shuffle_on" in the music directory.
 
+And press escape to exit the program.
+
 ## Start playing a music folder ##
 The Bluebox app doesn't make use of ID3 tags. It's purely folder based. I have my music sorted in folders. Each folder can be an album from one artist or a collection of miscellaneous music. The tags don't matter. The only requirement is that the folder has a unique name. I use a numbered system.
 
