@@ -535,10 +535,11 @@ class Albumart(object):
             except IndexError as error:
                 return False            
             print(track + " by " + artist)
-        self.lastfm_xml = urllib.request.urlopen("http://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=" 
-                + last_fm_api_key + "&" 
-                + "artist=" + artist 
-                + "&track=" + track)
+        try:
+            self.lastfm_xml = urllib.request.urlopen("http://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=" 
+                    + last_fm_api_key
+                    + "&artist=" + artist 
+                    + "&track=" + track)
         except urllib.error.HTTPError as error:
             return False
         try:
