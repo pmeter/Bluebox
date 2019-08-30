@@ -142,3 +142,6 @@ hdmi_cvt 1024 600  60 6 0 0 0
 ```
 # Used sources #
 I found [this thread](https://helpdesk.bluesound.com/discussions/viewtopic.php?f=4&t=2293&sid=e011c0bdf3ede3ea1aeb057de63c1da8) on the Bluesound forum. The other commands I found using Wireshark.
+
+# Contact #
+For feedback, you can reach me at pmetermail {at} gmail.com.
