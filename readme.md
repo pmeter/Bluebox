@@ -103,7 +103,9 @@ Open raspi-config. Set it to boot into the shell environment with the user alrea
 Using sudo, create the folder /mnt/mynas
 
 Mount your nas by starting "sudo nano /etc/fstab" and entering
-> [ip of your nas]:/volume1/music /mnt/mynas nfs defaults  0  0
+
+[ip of your nas]:/volume1/music /mnt/mynas nfs defaults  0  0
+
 Try out the configuration with sudo mount -a
 
 Put the Bluebox application files in the root of the music folder of your nas. Fill in the needed items in the file app_conf.py.
