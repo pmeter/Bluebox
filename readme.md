@@ -112,7 +112,7 @@ Put the Bluebox application files in the root of the music folder of your nas. F
 Create the file "bluebox.sh" in the user directory containing:
 > python3 /mnt/mynas/app.py
 
-If it doesn't work, you might try and change that (on your own risk) to:
+If the user cannot access /mnt/mynas, you might try and change the above (on your own risk) to:
 > sudo python3 /mnt/mynas/app.py
 
 Make the file executable with sudo chmod +x bluebox.sh 
