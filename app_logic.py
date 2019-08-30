@@ -539,6 +539,8 @@ class Albumart(object):
                 + last_fm_api_key + "&" 
                 + "artist=" + artist 
                 + "&track=" + track)
+        except urllib.error.HTTPError as error:
+            return False
         try:
             self.lastfm_parsed = minidom.parse(self.lastfm_xml)
             lastfm_elements = self.lastfm_parsed.getElementsByTagName("image")[2]
