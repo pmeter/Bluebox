@@ -15,7 +15,6 @@ I wanted a few special things:
 * Quick access to unlimited music directories and unlimited radio stations
 * Select music folder based, ignoring ID3-tags
 * By starting some music, automatically clear the playlist and load the whole directory
-* The app shouldn't have to update if you update your Bluesound music index
 * Get album art from multiple sources like Last Fm
 
 # Usage #
