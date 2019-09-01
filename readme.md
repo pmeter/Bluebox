@@ -31,7 +31,7 @@ After each command, you press enter.
 
 ```
 Play: 3
-Pause: 0
+Stop: 0
 Next: 6 (arrow right)
 Previous: 4 (arrow left)
 Seek 30 sec forward: 9 (above arrow right)
