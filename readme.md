@@ -75,7 +75,7 @@ The radio stations are also numbered, but starts with a 0. So the Dutch radio 3 
 You can add your own music folders by adding them in radio.cvs, which is a comma separated file.
 
 ## Spotify ##
-You can't start a Spotify album from Bluebox. But if you start one with the official Spotify app, you can see what's playing.
+You can't start a Spotify album from Bluebox. But if you start one with the official Spotify app, you can see what's playing. And off course you can skip songs.
 
 # Installation #
 
