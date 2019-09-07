@@ -1,0 +1,89 @@
+<h1 id="bluebox">Bluebox</h1>
+<p>Bluebox is an alternative app to control the Bluesound Node music player. It's name comes from Bluesound and Jukebox. It runs on Windows and a Raspberry Pi running Raspbian (Linux). Selecting music in Bluebox doesn't make use of ID3 tags like artist and album. It's purely folder based. But once selected, Bluebox displays the ID3 information it gets from the Bluesound player.</p>
+<p>I've made this app as a hobby project. It's my first program :-)</p>
+<h1 id="screenshot">Screenshot</h1>
+<div class="figure">
+<img src="https://tweakers.net/ext/f/Kpma7dO1jsqwgu0KFJbyTHXK/full.png" alt="GUI image" /><p class="caption">GUI image</p>
+</div>
+<h1 id="purpose">Purpose</h1>
+<p>I wanted a few special things: * Run the app on a Raspberry Pi with physical buttons for control * A physical display, permanently showing the playlist and album art * Quick access to unlimited music directories and unlimited radio stations * Select music folder based, ignoring ID3-tags * By starting some music, automatically clear the playlist and load the whole directory * Get album art from multiple sources like Last Fm</p>
+<h1 id="usage">Usage</h1>
+<h2 id="physical-buttons-for-control">Physical buttons for control</h2>
+<p>The Bluebox app, running on a Raspberry Pi, can be controlled by a physical numeric keypad. Like this: <img src="https://tweakers.net/ext/f/Bp6pbeOblb8KT7XEZi70ZIwm/medium.jpg" alt="Keypad image" /> <img src="https://tweakers.net/ext/f/FjMlup34GATKbIEM56oUrIJt/full.jpg" alt="Raspberry Pi image" /></p>
+<h2 id="basic-play-functions">Basic play functions</h2>
+<p>The Bluebox app has some buttons like play and pause. Personally I don't use them. I only use the numeric keypad.</p>
+<p>After each command, you press enter.</p>
+<pre><code>Play: 3
+Stop: 0
+Next: 6 (arrow right)
+Previous: 4 (arrow left)
+Seek 30 sec forward: 9 (above arrow right)
+Seek 30 sec backward: 7 (above arrow left)
+Repeat on: 8 (endless sign)
+Repeat off: 1
+Shuffle on: 5
+Shuffle off: 2
+Start playing album 123: 123
+Start playing a dir containing &#39;Best of Queen&#39;: best of queen
+Start playing album 123 without clearing playlist: +123
+Goto number 11 of the playlist: -11</code></pre>
+<p>When you start playing a music folder, repeat is automatically on and shuffle is automatically off. This is different when there is an empty file &quot;!shuffle_on&quot; in the music directory.</p>
+<p>And press escape to exit the program.</p>
+<h2 id="start-playing-a-music-folder">Start playing a music folder</h2>
+<p>The Bluebox app doesn't make use of ID3 tags. It's purely folder based. I have my music sorted in folders. Each folder can be an album from one artist or a collection of miscellaneous music. The tags don't matter. The only requirement is that the folder has a unique name. I use a numbered system.</p>
+<p>One of the main folders is &quot;246 Classic Rock&quot;.</p>
+<p>In that folder there is for instance &quot;246.1 Supertramp &amp; Roger Hodgson&quot;.</p>
+<p>And in that folder you can find &quot;246.1.2 - 1974 Supertramp - Crime Of The Century&quot;.</p>
+<p>To start that album, you simply put in &quot;246.1.2&quot; and &quot;enter&quot;. Then that album starts playing.</p>
+<p>You can also enter &quot;246.1&quot; to start playing all albums from Supertramp.</p>
+<p>I have a list on paper of all albums and collections, which is just a printout of my folder structure.</p>
+<p>You can also use key words. Start playing a dir containing 'Best of Queen': best of queen.</p>
+<p>By playing a music folder, the playlist is automatically cleared and the whole folder is loaded including subfolders. If you start your folder with &quot;+&quot; in front of it, the playlist won't be cleared. So you can easily put many folders in the playlist.</p>
+<p>On each input, the Bluebox app scans your folder structure to find and play the intended folder. So when you add new music, use the official Bluesound app to update the player index and you're done.</p>
+<h2 id="start-playing-a-radio-station">Start playing a radio station</h2>
+<p>The radio stations are also numbered, but starts with a 0. So the Dutch radio 3 is started by entering &quot;03&quot; and &quot;enter&quot;. Radio 3 also has some special streams. They are played by entering &quot;03.1&quot; or &quot;03.2&quot;. Radio Paradise is played by entering 10, or 101 for the Mellow mix etc.</p>
+<p>You can add your own music folders by adding them in radio.cvs, which is a comma separated file.</p>
+<h2 id="spotify">Spotify</h2>
+<p>You can't start a Spotify album from Bluebox. But if you start one with the official Spotify app, you can see what's playing. And off course you can skip songs.</p>
+<h1 id="installation">Installation</h1>
+<h2 id="files">Files</h2>
+<p>The program consists of two main files. The file app_logic.py contains command-functions and status-lookup functions that can be reusable in other projects. The other file app.py is mainly the GUI. The configuration is done in app_conf.py and radio.cvs. The files Status and Playlist are just examples to try the app without a Bluesound player, by setting static_mode on True in the configuration file.</p>
+<h2 id="run-it-on-windows-and-a-raspberry-pi">Run it on Windows and a Raspberry Pi</h2>
+<p>The Bluebox app is written in Python 3. I have mine running on three devices: Windows and two Raspberry Pi's running Raspbian (Linux).</p>
+<h2 id="installation-on-windows">Installation on Windows</h2>
+<p>Put all the app-files in one folder and fill in the needed items in the file app_conf.py. Install Python3 if needed. Start the application and see which libraries need to be installed. From what I remember these are:</p>
+<pre><code>python3-tk
+python-imaging
+python-imaging-tk
+python3-pil.imagetk</code></pre>
+<h2 id="installation-on-a-raspberry-pi">Installation on a Raspberry Pi</h2>
+<p>Install Raspbian, including the graphic environment, on a Raspberry Pi. I use a Raspberry Pi 3b.</p>
+<p>Open raspi-config. Set it to boot into the shell environment with the user already logged in.</p>
+<p>Using sudo, create the folder /mnt/mynas</p>
+<p>Mount your nas by starting &quot;sudo nano /etc/fstab&quot; and entering &gt;[ip of your nas]:/volume1/music /mnt/mynas nfs defaults 0 0</p>
+<p>Try out the configuration with sudo mount -a</p>
+<p>Put the Bluebox application files in the root of the music folder of your nas. Fill in the needed items in the file app_conf.py.</p>
+<p>Create the file &quot;bluebox.sh&quot; in the user directory containing: &gt; python3 /mnt/mynas/app.py</p>
+<p>If the user cannot access /mnt/mynas, you might try and change the above (on your own risk) to: &gt; sudo python3 /mnt/mynas/app.py</p>
+<p>Make the file executable with sudo chmod +x bluebox.sh</p>
+<p>In the user directory make a file &quot;.xsession&quot; and put there:</p>
+<pre><code>#!/bin/sh
+xset s off
+xset -dpms
+xset s noblank
+xset -nocursor
+./bluebox.sh</code></pre>
+<p>Install the needed Python libraries. If I remember correctly, these are:</p>
+<pre><code>sudo apt-get install python3-tk
+sudo apt-get install python-imaging 
+sudo apt-get install python-imaging-tk
+sudo apt-get install python3-pil.imagetk</code></pre>
+<p>Start the Bluebox app from the shell with entering &quot;startx&quot;.</p>
+<h1 id="a-physical-display-permanently-showing-the-playlist-and-album-art">A physical display, permanently showing the playlist and album art</h1>
+<p>I use the ETEPON Raspberry Pi Screen 7 Inch HDMI Monitor. There is one screen layout for all functions. Everything is there and accessible in one glance.</p>
+<p>If you use this display, then with &quot;sudo nano /boot/config.txt&quot; fill in the line:</p>
+<pre><code>hdmi_cvt 1024 600  60 6 0 0 0</code></pre>
+<h1 id="used-sources">Used sources</h1>
+<p>I found <a href="https://helpdesk.bluesound.com/discussions/viewtopic.php?f=4&amp;t=2293&amp;sid=e011c0bdf3ede3ea1aeb057de63c1da8">this thread</a> on the Bluesound forum. The other commands I found using Wireshark. I also found, but didn't really use <a href="https://github.com/venjum/bluesound">this project</a> of Venjum at Github.</p>
+<h1 id="contact">Contact</h1>
+<p>For feedback, you can reach me at pmetermail {at} gmail.com.</p> 
